@@ -1,0 +1,33 @@
+<body style="margin: 0" id="diceFrame">
+<script>
+var currentRoll = 0;
+</script>
+  <style type="text/css">@import "../main.css";</style>
+  <style type="text/css">@import "dice.css";</style>
+    <div id="info_div" style="display: none">
+        <div class="center_field">
+            <span id="label"></span>
+        </div>
+    </div>
+    <div id="selector_div" style="display: none">
+        <div class="center_field">
+            <input style="display: none" type="text" id="set" value="4d6"></input><br/>
+            <button style="display: none" style="margin-left: 0.6em" id="throw">throw</button>
+        </div>
+    </div>
+    <div id="canvas"></div>
+
+    <script src="../libs/three.min.js"></script>
+    <script src="../libs/cannon.min.js"></script>
+    <!--script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOelhLSnlUQ3ZMc2M"></script>
+    <script type="text/javascript" src="https://drive.google.com/uc?id=0ByGeV2TiysmOczhfWW90OEV0dmM"></script-->
+
+
+    <script type="text/javascript" src="../teal.js"></script>
+    <script type="text/javascript" src="dice.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" defer="defer">
+        dice_initialize(document.body);
+    </script>
+</body>
+</html>
